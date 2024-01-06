@@ -1,0 +1,56 @@
+.char-group {
+  display: inline-flex;
+  margin: 5px;
+}
+
+.character-container {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  margin-left: -2px;
+}
+
+.character {
+  display: grid;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  background-image: url('img/bg.svg');
+  /* 替换为实际的路径 */
+  background-size: cover;
+  font-family: 楷体, 楷体_gb2312, "Kaiti SC", STKaiti, "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312, DFKai-SB, TW-Kai, web-fz;
+  font-size: 58px;
+  /* 根据需要调整字体大小 */
+}
+
+.pinyin {
+  font-size: 28px;
+  /* 根据需要调整拼音的字体大小 */
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.no-print{
+  margin: 5px
+}
+
+@media print {
+  .container {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .character-container {
+    page-break-inside: avoid;
+  }
+
+  .afterpage {
+    break-before: always;
+  }
+  .no-print {
+    display: none;
+  }
+
+}

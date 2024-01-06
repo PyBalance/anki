@@ -8,13 +8,21 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.69",
+    "@types/papaparse": "^5.3.14",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
+    "antd": "^5.12.7",
+    "cnchar": "^3.2.5",
+    "cnchar-poly": "^3.2.5",
+    "hanzi-writer-data": "^2.0.1",
+    "papaparse": "^5.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "ts-node": "^10.9.2",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
   },
   "scripts": {
     "start": "react-scripts start",
